@@ -1,20 +1,20 @@
-# This project was upgraded with external_updater.
-# Usage: tools/external_updater/updater.sh update external/rust/crates/fastrand
-# For more info, check https://cs.android.com/android/platform/superproject/+/main:tools/external_updater/README.md
-
 name: "fastrand"
 description: "A simple and fast random number generator"
 third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://crates.io/crates/fastrand"
+  }
+  url {
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/fastrand/fastrand-1.9.0.crate"
+  }
+  version: "1.9.0"
+  # Dual-licensed, using the least restrictive per go/thirdpartylicenses#same.
   license_type: NOTICE
   last_upgrade_date {
-    year: 2024
+    year: 2023
     month: 2
-    day: 8
-  }
-  homepage: "https://crates.io/crates/fastrand"
-  identifier {
-    type: "Archive"
-    value: "https://static.crates.io/crates/fastrand/fastrand-2.0.1.crate"
-    version: "2.0.1"
+    day: 17
   }
 }
